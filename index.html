@@ -1,0 +1,205 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+
+<head>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+    <title>Learning Journal - Web Dev</title><!--web page title -->
+</head>
+
+<body>
+    <!--Markup all web page content inside the 'body' tags -->
+    <div id="wrapper">
+        <a id="top"></a>
+        <!--The 'wrapper' contains all the page content-->
+
+        <header><!--The main heading for the page -->
+            <h1>Learning Journal</h1>
+            <h2>Links:</h2>
+        </header>
+
+        <nav class="menu"><!--The primary navigation for the page -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <main><!--The main page content -->
+
+            <h2>Weekly Posts</h2>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week3"></a>Week 3: More HTML markup</h3>
+                    <p>Published on <time datetime="2023-10-19"><strong>October 19, 2023</strong></time></p>
+                </header>
+                <p>
+                    In week 3, we had a more in-depth look into the various types of lists available to us in HTML. So
+                    as well as ordered/unordered lists, we now have access to a different type of list called a
+                    'description' list. Alongside the description list we also learned some more informatiton on nested
+                    lists and how to format them.
+                </p>
+                <figure>
+                    <img src="images/finale.png" alt=" ">
+                    <figcaption>Example of a description list, alongside the HTML used to create it<br>
+                        <small>Screenshot &copy; UoB</small>
+                    </figcaption>
+                </figure>
+                <p>
+                    Although it is relatively uncommon to come across a HTML table nowadays, we learned some table
+                    markup for the sake of broadening our understanding of HTML in general. Not too long ago these
+                    tables were still quite common, due to CSS support accross different browsers being sub-optimal.
+                    However in the modern digital age accessibility is key, and if your website sells a product or
+                    service, failing to make your website accessible can have some serious repurcussions. There are
+                    multiple reasons as to why opting to use a HTML table for layout instead of the CSS layout
+                    techniques:
+                <blockquote>
+                    "Layout tables reduce accessibility for visually impaired users: screen readers, used by
+                    blind people, interpret the tags that exist in an HTML page and read out the contents to the user"
+                    (MDN Contributers, 2023).
+                </blockquote>
+                <p>
+                    Another reason is that table layouts require more complex markup
+                    structures than its CSS counterparts, this can often lead to issues with writing, maintaining and
+                    debugging the code.
+                </p>
+                <p>
+                    Below is my current weekly timetable laid out in the HTML table format.
+                </p>
+                <table>
+                    <tr>
+                        <th>Day/time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>9-10am</td>
+                        <td></td>
+                        <td>CI435 lecture</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10-11am</td>
+                        <td>CI401 lecture</td>
+                        <td>CI435 lab </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11-12am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+            </article>
+
+            <hr>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week2"></a>Week 2: Marking up content in the learning journal</h3>
+                    <p>Published on <time datetime="2023-10-12"><strong>October 12, 2023</strong></time></p>
+                </header>
+                <p>
+                    During the lab sessions in week 2, I started to add content to fill out the main body of the
+                    learning
+                    journal, alonside this I also -
+                </p>
+                <ol>
+                    <li>Linked multiple pages to external websites using an absolute link</li>
+                    <li>Used different tags, including <code>h1</code> and <code>h2</code> tags</li>
+                    <li>Added a link to Jennie Harding's email</li>
+                    <li>Started adding images to the learning journal using the <code>img</code> tag</li>
+                    <li>Added page navigation using named anchors</li>
+                    <li>Added publication dates to all posts using the <code>time</code> tag</li>
+                </ol>
+                <figure>
+                    <img src="images/image_2023-10-26_121434825.png" alt=" ">
+                    <figcaption>Some of the HTML used in Week 2<br>
+                        <small>Screenshot &copy; UoB</small>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <hr>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week1"></a>Week 1: Creating a Basic HTML Website</h3>
+                    <p>Published on <time datetime="2023-10-08"><strong>October 8, 2023</strong></time></p>
+                </header>
+                <p>To get started on making a basic HTML website, I first created a site folder. Stored inside of this
+                    site folder are the files for the Learning Journal page, which was named "index.html". Shortly
+                    after, I created a second and third page for the contact and tutorial pages, and linked them to the
+                    learning journal to allow for quick and easy navigation of the website. Then I updated the copyright
+                    details in the footer of the website to contain my name and a recent date. Finally, I validated the
+                    HTML using the World Wide Web Consortium. This is important as it can check your code is valid and
+                    well formed.
+                </p>
+
+                <p>!!!!!!!!!Some reference here to my own reading and research, explaining what I have done and what I
+                    have
+                    learned from it.</p>
+
+            </article>
+
+            <hr>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week0"></a>Induction Week: Lab and Assessment Brief</h3>
+                </header>
+                <p> In the first session we covered the outcomes of the course and where we aim to finish at by the end
+                    of the year. I was introduced to the lecturers and contacted the Service Desk to get access to the
+                    brighton domains website, which will allow me to build and host my website over the course of the
+                    next few weeks. </p>
+
+                <p>Some reference here to my own reading and research, explaining what I have done and what I have
+                    learned from it.</p>
+
+            </article>
+
+        </main><!--Close main page content -->
+
+        <hr>
+
+        <aside>
+
+            <h2>References</h2>
+
+            <ol>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics"> MDN Contributers
+                            (July 19, 2023). HTML table basics - Learn web development | MDN.</a>
+                    </cite>
+                </li>
+                <li>...</li>
+            </ol>
+
+        </aside>
+
+        <p><a href=" #top">Go to top</a></p>
+
+        <footer><!--Footer content -->
+            <a href="mailto:jh1033@brighton.ac.uk">Email Jennie Harding</a>
+            <small>&copy; 2023, Year 1 Web Dev.</small>
+        </footer>
+
+    </div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+
+</html><!--Close 'html' -->
