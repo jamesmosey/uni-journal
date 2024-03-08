@@ -1,0 +1,548 @@
+* {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --clr-1: #dc52bf;
+    --clr-2: #b847b1;
+    --clr-3: #FB5CFF;
+    --clr-4: #743296;
+    --clr-5: #00D8FF;
+    /*--clr-5: #432174;*/
+    --clr-6: #23123b;
+}
+
+body {
+    background: var(--clr-6);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.header {
+    background: rgb(21, 155, 144);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #0F110C;
+    font-size: 36px;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    background: rgb(21, 155, 144);
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testingbtn {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+    color: var(--clr-6);
+    background-color: rgba(244, 63, 112, 0.2);
+    border: 6px solid var(--clr-6);
+    border-radius: 9.5px;
+    transition: all 0.3s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.testingbtn:hover {
+    transform: translateY(-7.5px);
+    background-color: #f43f70;
+    color: #f9f9fb;
+}
+
+.btn {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+    color: var(--clr-6);
+    background-color: rgba(244, 63, 112, 0.2);
+    border: 6px solid var(--clr-6);
+    border-radius: 9.5px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-7.5px);
+    background-color: #f43f70;
+    color: #f9f9fb;
+}
+
+.footer {
+    background: rgb(21, 155, 144);
+    height: 80px;
+    order: 3;
+}
+
+.footer a {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.footer small {
+    font-size: 15px;
+    margin-left: -10px;
+}
+
+.main {
+    text-align: left;
+    background: rgb(82, 0, 121);
+}
+
+.fontlist {
+    margin-top: -15px;
+}
+
+article h2 {
+    margin-left: 5px;
+    color: rgb(39, 208, 194);
+}
+
+article h3 {
+    margin-left: 5px;
+    color: rgb(39, 208, 194);
+}
+
+article p {
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #77b1c0;
+    font-size: 16px;
+}
+
+blockquote {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #77b1c0;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    order: 2;
+}
+
+label {
+    display: block;
+}
+
+.video-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+iframe	{
+    width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9 */
+    height: 0; 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#form1 p {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: 50px;
+}
+
+#form1 label {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#form1 textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form1 input[type="text"] {
+    margin-bottom: 10px;
+}
+
+#form1 input[type="email"] {
+    margin-bottom: 10px;
+}
+
+#form1 input[type="submit"] {
+    margin: 10px;
+    margin-left: 50px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#form1 input[type="radio"] {
+    margin: 5px;
+}
+
+#form1 input[type="color"] {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    
+}
+
+#form1 input[type="file"] {
+    margin-bottom: 7px;
+    margin-top: 2px;
+}
+
+#form1 fieldset {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#form1 fieldset legend {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    margin: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 720px;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    inset: -.25rem;
+    z-index: -1;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-4),
+        var(--clr-3));
+    border-radius: inherit;
+    animation: rotation 5s linear infinite;
+}
+
+.card::after {
+    filter:blur(2rem);
+}
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotation {
+    0%   { --gradient-angle: 0deg; }
+    100% { --gradient-angle: 360deg; } 
+}
+
+.card-image {
+    background-color: aqua;
+    height: 175px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url('../images/recall.jpeg');
+}
+
+.card-2 {
+    background-image: url('../images/pomodoro.jpg');
+}
+
+.card-3 {
+    background-image: url('../images/comment.jpg');
+}
+
+.card-4 {
+    background-image: url('../images/leitner.jpg');
+}
+
+.card-5 {
+    background-image: url('../images/feynman.png');
+}
+
+.card h2 {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.card p {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+#ch1,
+#ch2,
+#ch3,
+#ch4,
+#ch5 {
+    display: none;
+}
+
+#ch1:checked ~ .hiddencontent1,
+#ch2:checked ~ .hiddencontent2,
+#ch3:checked ~ .hiddencontent3,
+#ch4:checked ~ .hiddencontent4,
+#ch5:checked ~ .hiddencontent5 {
+    display: block;
+}
+
+#ch1:checked ~ .hiddencontent1 label,
+#ch2:checked ~ .hiddencontent2 label,
+#ch3:checked ~ .hiddencontent3 label,
+#ch4:checked ~ .hiddencontent4 label,
+#ch5:checked ~ .hiddencontent5 label {
+    display: block;
+}
+
+#ch1:checked ~ .label-container1 label,
+#ch2:checked ~ .label-container2 label,
+#ch3:checked ~ .label-container3 label,
+#ch4:checked ~ .label-container4 label,
+#ch5:checked ~ .label-container5 label {
+    display: none;
+}
+
+.hiddencontent1,
+.hiddencontent2,
+.hiddencontent3,
+.hiddencontent4,
+.hiddencontent5 {
+    display: none;
+}
+
+.card label {
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--clr-6);
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    margin: 20px 50px;
+    border-radius: 5px;
+}
+
+.label-container1,
+.label-container2,
+.label-container3,
+.label-container4,
+.label-container5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.wireframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.brain {
+    width: 100%;
+}
+
+.post {
+    margin-top: -17.5px;
+    margin-bottom: 2px;
+    background-color: rgb(21, 155, 144);
+    border-radius: 9.5px;
+}
+
+.post h3 {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #0F110C;
+    font-size: 22px;
+    overflow: hidden;
+    margin-top: 17.5px;
+    margin-left: 12px;
+}
+
+.post p {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #0F110C;
+    font-size: 12px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+.posttime {
+    margin-left: 7.5px;
+}
+
+.aside1 {
+    background: rgb(21, 155, 144);
+}
+
+.aside1 h2 {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #0F110C;
+    font-size: 28px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.aside1 p {
+    margin-top: 40px;
+}
+
+.aside2 {
+    background: rgb(21, 155, 144);
+}
+
+.aside2 h2 {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #0F110C;
+    font-size: 28px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.aside2 a {
+    line-height: 25px;
+}
+
+.aside2 li {
+    margin-top: 30px;
+}
+
+.fltlt {
+    float: left;
+    margin-right: 5px;
+    margin-top: -20px;
+}
+
+.fltlt img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.lab1img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #77b1c0;
+}
+
+li {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #77b1c0;
+    font-size: 15px;
+}
+
+cite {
+    line-height: 20px;
+    color: #77b1c0;
+}
+
+.aside1 a:link,
+.aside1 a:visited,
+.aside1 a:active,
+.aside2 a:link,
+.aside2 a:visited,
+.aside2 a:active,
+.footer a:link,
+.footer a:visited,
+.footer a:active {
+    color: rgb(21, 0, 210);
+}
+
+.aside1 a:hover,
+.aside2 a:hover,
+.footer a:hover {
+    color: rgb(233, 132, 17);
+    text-decoration: none;
+}
+
+@media all and (min-width: 800px) {
+    
+    .main {
+        flex: 3;
+    }
+
+    .aside1 {
+        order: 1;
+    }
+
+    .aside2 {
+        order: 2;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .footer {
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+}

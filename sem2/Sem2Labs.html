@@ -1,0 +1,172 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+    <meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+    <title>Learning Journal - Web Dev</title><!--web page title -->
+</head>
+
+<body>
+    <a id="top"></a>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Semester 2 Lab Exercises</h1>
+        </header>
+
+        <div class="menu">
+            <form style="display: inline" action="/sem1/index.html" method="get">
+                <button class="btn">Home</button>
+            </form>
+            <form style="display: inline" action="/sem1/tutorial.html" method="get">
+                <button class="btn">Tutorial</button>
+            </form>
+            <form style="display: inline" action="/sem1/contact.html" method="get">
+                <button class="btn">Contact</button>
+            </form>
+        </div>
+
+        <main class="main"><!--Main Content-->
+            <article>
+                <header class="post">
+                    <h3><a id="week5"></a>Lab 5: Working with Arrays</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2024-03-09"><strong>March 9, 2024</strong></time></p>
+                    </div>
+                </header>
+                <form style="display: inline" action="/sem2/session05/index.html" method="get">
+                    <button class="testingbtn">Week 5 Testing Page</button>
+                </form>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week4"></a>Lab 4: Working with Strings</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2024-03-08"><strong>March 8, 2024</strong></time></p>
+                    </div>
+                </header>
+                <form style="display: inline" action="/sem2/session04/index.html" method="get">
+                    <button class="testingbtn">Week 4 Testing Page</button>
+                </form>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week3"></a>Lab 3: Flow Control</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2024-03-06"><strong>March 6, 2024</strong></time></p>
+                    </div>
+                </header>
+                <form style="display: inline" action="/sem2/session03/index.html" method="get">
+                    <button class="testingbtn">Week 3 Testing Page</button>
+                </form>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week2"></a>Lab 2: Statements, Variables, Data Types</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2024-02-28"><strong>February 28, 2024</strong></time></p>
+                    </div>
+                </header>
+                <h3>In JavaScript, a semi-colon after a statement is optional. Why should you use it anyway?</h3> 
+                <p>
+                    If you forget to add a semi-colon after a statement, the interpreter will automatically add one for you without telling you. This can easily hide other problems in your code, so it is best practice to make 
+                    sure you are adding semi-colons where they are needed. 
+                </p>
+                <h3>In JavaScript, variables can be declared with the keywords 'var' and 'let'. Explain the difference.</h3>
+                <p>
+                    Any variables declared with 'let' are visible within a block scope. Meaning that the variable can only be accessed by other code which is contained within the same curly braces as the variable. Whereas 
+                    variables declared using 'var' use a global or local scope, meaning they CAN be accessed from outside of the curly braces in which they were declared.
+                </p> 
+                <form style="display: inline" action="/sem2/session02/index.html" method="get">
+                    <button class="testingbtn">Week 2 Testing Page</button>
+                </form>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week1"></a>Lab 1: Introduction to JavaScript</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2024-02-20"><strong>February 20, 2024</strong></time></p>
+                    </div>
+                </header>
+                <h2>JavaScript Background</h2>
+                <h3>1. What are compiled and interpreted languages? Which is JavaScript?</h3> 
+                <p>
+                    JavaScript is an interpreted language, meaning it reads, parses and translates the source code each time it is executed. Whereas compiled languages like Java and C++ read, parse and translate the source
+                    code into an executable file, which can then be executed many times without needing to be recompiled.
+                </p>
+                <h3>2. What are weakly and strongly typed languages? Which is JavaScript?</h3>
+                <p>
+                    JavaScript is a weakly typed language, meaning that variables can hold any type of data. Whereas strongly typed languages such as Java and C++ use variables of specific data types, which allow them to 
+                    only hold that specific data type.
+                </p>
+                <img class="lab1img" src="/images/strongvsweak.png">
+                <h3>3. Three common uses for JavaScript in web development.</h3>
+                <ol>
+                    <li>Checking form values.</li>
+                    <li>Modifying HTML document structure.</li>
+                    <li>Communicating with a server via AJAX</li>
+                </ol>
+                    
+                <h2>Browser Development Tools</h2>
+                <h3>1. Two ways to activate the developer tools in Chrome.</h3>
+                <ol>
+                    <li>Using CTRL + SHIFT + I (CMD + ALT + I on Mac)</li>
+                    <li>Right click on the page and select 'Inspect'</li>
+                </ol>
+
+                <h3>2. Using the Chrome developer tools:</h3>
+                <p><strong>How to find out about page elements and their style.</strong></p>
+                <p>One way of doing this is right clicking on the element and selecting 'Inspect', the element and its styles will be displayed on the right side.</p>
+                <p><strong>How to inspect the different files making up a web page.</strong></p>
+                <p>By once again opening the Chrome developer tools with either the shortcut or by right clicking and choosing 'Inspect', we can select the 'Sources' option at the top of the page to view the different files that 
+                    make up a website.</p>
+                <p><strong>How to inspect console outputs of JavaScript code.</strong></p>
+                <p>We can do this by opening the Chrome developer tools and selecting 'Console' at the top of the page. This brings up a window that will display any console output.</p>
+                <p><strong>How to debug JavaScript code in a page.</strong></p>
+                <p>All modern browsers have a built-in JavaScript debugger. By opening the developer tools and selecting 'Console', we can use 'console.log()' to display any JavaScript values in the console window. Another option 
+                    for debugging is to select the 'Sources' option at the top of the developer tools window and adding the keyword 'debugger;' - this stops the execution of the code after that point and calls the debugger function, which 
+                    is available in almost all browsers that support JavaScript.
+                </p>
+            </article>
+        </main><!--END OF MAIN CONTENT PAGE-->
+
+        <aside class="aside aside1">
+            <h2>Lab Index:</h2>
+            <ul>
+                <li>
+                    <p><a href=" #week1">Lab 1: Introduction to JavaScript</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week2">Lab 2: Statements, Variables, Data Types</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week3">Lab 3: Flow Control</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week4">Lab 4: Working with Strings</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week5">Lab 5: Working with Arrays</a></p>
+                </li>
+            </ul>
+            <br>
+        </aside>
+
+        <footer class="footer">
+            <div>
+                <form style="display: inline" action=" #top" method="get">
+                    <button class="btn">Go to top</button>
+                </form>
+            </div>
+            <!--<p><a href=" #top">Go to top</a></p>-->
+            <a href="mailto:jh1033@brighton.ac.uk">Email Jennie Harding</a>
+            <small>&copy; 2023, Year 1 Web Dev.</small>
+        </footer>
+    </div>
+</body>

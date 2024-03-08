@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+</head>
+
+<body class="contactpage">
+    <div class="wrapper">
+        <header class="header">
+            <h1>Contact Me</h1>
+        </header>
+
+        <div class="menu">
+            <form style="display: inline" action="/sem1/index.html" method="get">
+                <button class="btn">Home</button>
+            </form>
+            <form style="display: inline" action="/sem1/tutorial.html" method="get">
+                <button class="btn">Tutorial</button>
+            </form>
+            <form style="display: inline" action="/sem2/Sem2Labs.html" method="get">
+                <button class="btn">Sem 2 Labs</button>
+            </form>
+        </div>
+        
+        <div class="main">
+            <form id="form1">
+                <fieldset><legend>Your contact details</legend>
+                    <label for="name">Name* </label>
+                    <input id="name" type="text" required placeholder="Firstname + Surname" >
+                    <label for="email">Email Address* </label>
+                    <input id="email" type="email" required placeholder="you@email.com">
+                    <label for="url">Website Address</label>
+                    <input type="text" id="url" value="http://">
+                    <label for="colour">Favourite Colour</label>
+                    <input id="colour" type="color">
+                    <label for="myfile">Upload Your CV:</label>
+                    <input type="file" id="myfile" name="myfile">
+                    <label>* = Required field</label>
+                </fieldset>
+
+                <p>Your comments:</p>
+                <fieldset>
+                    <label for="message">Message: </label>
+                    <textarea id="message" required></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Would you like more information?</legend>
+                    <label for="information-yes">
+                    <input type="radio" id="information-yes" 
+                    name="information" value="yes">Yes please</label>
+                    <label for="information-no">
+                    <input type="radio" id="information-no" 
+                    name="information" value="no" checked >No thanks</label>
+                </fieldset>
+
+                <input type="submit" value="Click to send" >
+
+            </form>
+        </div>   
+        
+        <footer class="footer">
+            <div>
+                <form style="display: inline" action=" #top" method="get">
+                    <button class="btn">Go to top</button>
+                </form>
+            </div>
+            <!--<p><a href=" #top">Go to top</a></p>-->
+            <a href="mailto:jh1033@brighton.ac.uk">Email Jennie Harding</a>
+            <small>&copy; 2023, Year 1 Web Dev.</small>
+        </footer>
+
+    </div>
+</body>

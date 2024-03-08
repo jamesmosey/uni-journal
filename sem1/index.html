@@ -1,0 +1,496 @@
+<!doctype html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/stylesheet.css" rel="stylesheet">
+    <meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+    <title>Learning Journal - Web Dev</title><!--web page title -->
+</head>
+
+<body>
+    <a id="top"></a>
+    <div class="wrapper">
+        <header class="header">
+            <h1>Web Development Learning Journal</h1>
+        </header>
+
+        <div class="menu">
+            <form style="display: inline" action="/sem1/tutorial.html" method="get">
+                <button class="btn">Tutorial</button>
+            </form>
+            <form style="display: inline" action="/sem1/contact.html" method="get">
+                <button class="btn">Contact</button>
+            </form>
+            <form style="display: inline" action="/sem2/Sem2Labs.html" method="get">
+                <button class="btn">Semester 2 Labs</button>
+            </form>
+        </div>
+
+        <main class="main"><!--Main Content-->
+
+            <article>
+                <header class="post">
+                    <h3><a id="week9"></a>Week 9: HTML5 Forms</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-12-03"><strong>December 3, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    To create the 'Contact me' page of the website, we must first learn how to create forms using HTML. Without these forms 
+                    the user would not be able to communicate with the website, it would be purely a one-way exchange. In this weeks lab excercise 
+                    we will create forms using purely HTML and CSS, no JavaScript or anything else to handle interactions. <br><br>The forms will be 
+                    non-functional and created purely as a proof of concept, ready for when we learn JavaScript in semester 2. After creating the basic 
+                    form, with fields for a firstname and surname (both required fields), a website address and a message box, we started looking at 
+                    other input types that are available for use in a form. After extensive research on the different types of input available to us, I decided to add a colour picker to my form. Along with this colour picker, I also added an option for users to upload files. Which is specified with the input type of 'file'. "The &lt;input type="file"&gt; defines a file-select field and a "Browse" button for file uploads." (w3schools, n.d)<br><br>
+                    Before moving on to styling the form, we can make use of some features in HTML to ensure our form is completed correctly. For example, 
+                    the user is now required to leave their name and email address if they wish to use the contact form. The email field of the form now also 
+                    only accepts an input if the input contains an '@' symbol. The name and email fields now contain sample text, to give the user a better 
+                    idea what information goes where at first glance. <br><br>Finally, the contact page was styled to match the rest of the website, so that the 
+                    overarching theme stays consistent throughout.
+
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week8"></a>Week 8: CSS3 Responsive Layouts</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-11-21"><strong>November 21, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    In week 8 we were introduced to the 'Flexbox' layout. After testing flexbox on a seperate site, I came to 
+                    the conclusion that flexbox would be the better option for laying out my site compared to the grid we had 
+                    implemented in the earlier weeks. This was largely due to how flexbox allowed me to create the site exactly 
+                    how it was shown on the wireframes, whereas the grid layout took lots of extra CSS to get the desired look. 
+                    <br><br>I created the new CSS for styling each box in the new layout and got to on transferring the old content into 
+                    the new format. Alongside the flexbox layout, we also covered the multi-column layout, which was immediately 
+                    cast aside due to not being able to provide the layout needed.<br><br> As I was moving the layout from grid over to flexbox, 
+                    I had to make sure to add the media queries back so that the site stayed responsive. Anything below 600px and the site displays 
+                    the layout intended for mobile use, between 600px and 800px the layout changes to the one meant for a tablet and finally, 
+                    anything above 800px displays as the layout intended for computer use.<br><br>Finally, I decided to do some more work on the cards I created 
+                    for the tutorial page last week. To achieve the effect you see on the cards, I started by adding a gradient and glow to the cards using 
+                    pseudo-elements. The glow effect was created by simply blurring the cards, there is no "glow" property in vanilla CSS. Next we use the @property at-rule
+                    to make the gradient rotate around the card. "The @property CSS at-rule is part of the CSS Houdini umbrella of APIs. It allows developers to explicitly define their CSS custom properties." (MDN Contributers, Jan 2024). 
+                    In essence, this allows us to give the browser more information about how we want the animation to work. It is important to mention that this is still 
+                    an experimental technology, although it is currently supported on Chrome, Safari and Edge - just not Firefox. <br><br>However, even if it wasn't supported on a user's browser, that's not 
+                    an issue at all as the cards will still appear how they normally would, just without the animated rotation of the gradient. The only problem that arises from this is that the HTML and CSS validators don't really understand this experimental technology and will chuck out an error message saying that it isn't valid. When in reality, it is valid, it's just extremely new and therefore isn't fully supported yet.
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week7"></a>Week 7: Flexible Media</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-11-16"><strong>November 16, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    To start week 7, I created custom buttons using media queries and CSS properties to make the buttons
+                    more interactive. When hovered over,
+                    the buttons slide upwards and change colour, which gives a much more interactive feel. The user can
+                    be sure that what they're hovering over is
+                    actually a button which links to another page and not just a design on the website. With this, the
+                    navigation bar was created, allowing for easy
+                    access to the different pages of the site.
+                </p>
+                <p>
+                    Upon beginning the lab excersises, we were asked to add a banner to the page with a background
+                    image. However, when adding a banner this way, when
+                    the viewport is resized the image itself stays the same size and wouldn't produce the effect we were
+                    looking for. Therefore, by changing the 'width' and
+                    'max-width' CSS properties, we can make it so the banner resizes itself when the viewport size is
+                    changed, thereby keeping it's intended look.
+                </p>
+                <p>
+                    Outside of labs and lectures, I started work on the tutorial page of the website. I started by creating 
+                    a set of 5 cards, each with a different study skill on it. After this, I found a tutorial online which 
+                    showed how to create a "read more" button using only HTML and CSS. I attempted to include this tutorial 
+                    on the study skills page using the &lt;iframe&gt; tags. However, accross all browsers tested, I was presented 
+                    with an error stating that "www.youtube.com is blocked". As a way around this, the video was instead added to the reading list. I was able to simulate a JavaScript 'click event' using HTML checkboxes, which 
+                    when checked would expand the card to show the hidden info and hide itself when unchecked. This method is known among 
+                    developers as the "Checkbox Hack". "This is a technique that allows you to control certain styles depending on whether checkboxes (or radio buttons) are checked or not." (G. Martsoukos, Nov 2022).
+                    To finish off, I added content to the cards and created the necessary CSS selectors for styling and adding the 
+                    final features to the tutorial page next week.
+                </p>
+                <p>
+                    Finally, I created a flexible video container to go on the tutorial page, which embeds the tutorial
+                    video that I followed to created the 'read more' buttons
+                    on the tutorial page. Using this method, when the size of the viewport is adjusted, the size and
+                    aspect ratio of the embedded video will stay the same.
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week6"></a>Week 6: Responsive Web Design</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-11-09"><strong>November 9, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    In week 6, we started by sketching out wireframes to get a better sense of how we want the overall
+                    site layout to look. We were
+                    advised to create wireframes for different screen layout widths, so I created a seperate sketch for
+                    a computer, tablet and phone layout.
+                    These sketches are shown below:
+                </p>
+                <figure>
+                    <img src="images/wireframes.png" alt=" " class="wireframe">
+                    <figcaption>The 3 wireframes detailing the site layout.<br>
+                        <small>Screenshot &copy; UoB</small>
+                    </figcaption>
+                </figure>
+                <p>
+                    After a layout was decided on, a few tweaks were made to the HTML of site. A line of HTML was added
+                    which forces mobile browsers to view the
+                    page the same way that a desktop browser would. Before implementing the grid layout shown in the
+                    wireframes, the stylesheet
+                    must be reorganised to allow the responsive grid to work correctly. <br><br>Upon implementing the
+                    grid, we followed the instructions shown to us
+                    in the lab and then tweaked the settings to get our desired result. We used media queries to
+                    determine at what point
+                    should the grid change as the viewport is shrunk. When styling the layouts, we employed a "mobile
+                    first" approach which meant mobile accessibility
+                    and usability was the top priortity. "Media queries are a key part of responsive web design, as they
+                    allow you to create different layouts
+                    depending on the size of the viewport, but they can also be used to detect other things about the
+                    environment your site is running on, for example
+                    whether the user is using a touchscreen rather than a mouse." (MDN Contributers, Dec 2023)
+                </p>
+                <p>
+                    Finally, to finish this week, we went around and made some extras tweaks to the CSS to allow for a
+                    more responsive site. For example, we made images
+                    flexible so that the viewport can be resized without affecting the image, and hid some elements so
+                    that they don't appear on smaller screens.
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week5"></a>Week 5: Styling Main Content</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-11-02"><strong>November 2, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    The first task of week 5's lab session had us specify a font family with a fallback, incase a user's
+                    computer
+                    does not have one of the selected fonts installed. I decided to use <b>Tahoma, Arial, Helvetica,
+                        sans-serif</b>
+                    as my font selection. Tahoma is the font intended for the site, however if the user does not have it
+                    installed,
+                    Arial / Helvetica will be used instead. The site has been tested with these different fonts to make
+                    sure usability
+                    is still good if Tahoma is not present on the user's system.<br><br> Secondly, we were presented
+                    with Google's online
+                    font library, where fonts can be linked to the site files which removes the risk of the user not
+                    having a font installed
+                    on their device. Since, according to the Massachusetts Institute of Technology (MIT), "The fonts
+                    that are most safe to use are:
+                </p>
+                <ul class="fontlist">
+                    <li>Arial / Helvetica</li>
+                    <li>Times New Roman / Times</li>
+                    <li>Courier New / Courier" (J. Morzinski, n.d.)</li>
+                </ul>
+                <p>
+                    Due to this fact, I decided not to change my current font choices for one of Google's online fonts,
+                    as the current font selection
+                    fits the page and will be supported by pretty much all devices that would wish to access it.<br><br>
+                    After tweaking the CSS of the fonts,
+                    we started changing different properties in the CSS of the main body of the learning journal. This
+                    involved fixing the margins of the
+                    paragraphs so everything was aligned correctly, and using colours and borders to get a better
+                    understanding of the site layout.<br><br> Finally,
+                    to finish this weeks lab session, we learnt how to float an image and wrap text around it. This
+                    technique was used on the image in week 2's post, which can be seen <a href=" #week2">here.</a>
+                    As the viewport is shrunk and expanded, we can observe that when room is available beside the image,
+                    the list will move from underneath and over to
+                    the side of the image. Floating images like this allows for a more responsive webpage and stops
+                    screen real estate from being wasted.
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week4"></a>Week 4: CSS Basics</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-10-24"><strong>October 24, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    Week 4 was our introduction to CSS, we started by copying a style sheet called 'normalize.css'. The
+                    aim of this stylesheet is to help render all elements consistently and in line with modern
+                    standards.
+                    After this we copied a basic style sheet template which contained selectors for the elements of
+                    index.html. We then used this template to style the body element by changing the font, the
+                    background
+                    colour of the page and the font size. <br><br>After this we began styling the other elements of
+                    index.html,
+                    such as; the table added in week 3, the <code>&lt;h&gt;</code> elements, the <code>&lt;p&gt;</code>
+                    elements, the <code>&lt;div id="wrapper"&gt;</code> element, the main menu and the
+                    <code>&lt;article&gt;</code>
+                    elements. Alongside this we also edited the pseudo-class selectors we were provided in
+                    'stylesheet.css',
+                    allowing for links to be styled in a way that potential users would be familiar with.
+                    <br><br>In my free time for this week, I started working on buttons for the navigation bar of the website. I found out that by using the '::hover' 
+                    selector and the 'transform' property, I can move the buttons along the Y axis when they're hovered over. This creates a sort of animated effect without the need 
+                    for any JavaScript. <br><br>Finally, as
+                    good
+                    practice, we validated both our HTML and CSS with the corresponding tools provided by w3c.
+
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week3"></a>Week 3: More HTML markup</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-10-19"><strong>October 19, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    In week 3, we had a more in-depth look into the various types of lists available to us in HTML. So
+                    as well as ordered/unordered lists, we now have access to a different type of list called a
+                    'description' list. Alongside the description list we also learned some more informatiton on nested
+                    lists and how to format them.
+                </p>
+                <p>
+                    Although it is relatively uncommon to come across a HTML table nowadays, we learned some table
+                    markup for the sake of broadening our understanding of HTML in general. Not too long ago these
+                    tables were still quite common, due to CSS support accross different browsers being sub-optimal.
+                    However in the modern digital age accessibility is key, and if your website sells a product or
+                    service, failing to make your website accessible can have some serious repurcussions. There are
+                    multiple reasons as to why opting to use a HTML table for layout instead of the CSS layout
+                    techniques:
+                <blockquote><strong>
+                        "Layout tables reduce accessibility for visually impaired users: screen readers, used by
+                        blind people, interpret the tags that exist in an HTML page and read out the contents to the
+                        user"
+                        (MDN Contributers, July 2023).
+                    </strong></blockquote>
+                <p>
+                    Another reason is that table layouts require more complex markup
+                    structures than its CSS counterparts, this can often lead to issues with writing, maintaining and
+                    debugging the code.
+                </p>
+
+                <!--<table> OLD TABLE NOT RLY NEEDED
+                    <tr>
+                        <th>Day/time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td>9-10am</td>
+                        <td></td>
+                        <td>CI435 lecture</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>10-11am</td>
+                        <td>CI401 lecture</td>
+                        <td>CI435 lab </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>11-12am</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>-->
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week2"></a>Week 2: Marking up content in the learning journal</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-10-12"><strong>October 12, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    During the lab sessions in week 2, I started to add content to fill out the main body of the
+                    learning journal, alongside this I also:
+                </p>
+
+                <div class="fltlt">
+                    <figure>
+                        <img src="images/image_2023-10-26_121434825.png" alt=" " class="fltlt">
+                        <figcaption>The HTML used in week 2, excluding the markup for this image.<br>
+                            <small>Screenshot &copy; UoB</small>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <ol>
+                    <li>Linked multiple pages to external websites using an absolute link</li>
+                    <li>Used different tags, including <code>h1</code> and <code>h2</code> tags</li>
+                    <li>Added a link to Jennie Harding's email</li>
+                    <li>Started adding images to the learning journal using the <code>img</code> tag</li>
+                    <li>Added page navigation using named anchors</li>
+                    <li>Added publication dates to all posts using the <code>time</code> tag</li>
+                </ol>
+
+                <p class="clear">
+                    Everything detailed in the list above was completed during the lab of week 2. However, alongside this I did some of my 
+                    own research concerning CSS. I had used HTML in the past, but never CSS. So I spent some of my free time this week watching online tutorials 
+                    on CSS to prepare myself for the coming weeks.
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week1"></a>Week 1: Creating a Basic HTML Website</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-10-08"><strong>October 8, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    To get started on making a basic HTML website, I first created a site folder. Stored inside of this
+                    site folder are the files for the Learning Journal page, which was named "index.html". Shortly
+                    after, I created a second and third page for the contact and tutorial pages, and linked them to the
+                    learning journal to allow for quick and easy navigation of the website. Then I updated the copyright
+                    details in the footer of the website to contain my name and a recent date. Finally, I validated the
+                    HTML using the World Wide Web Consortium. This is important as it checks that your code is valid and
+                    well formed.
+                </p>
+            </article>
+
+            <article>
+                <header class="post">
+                    <h3><a id="week0"></a>Induction Week: Lab and Assessment Brief</h3>
+                    <div class="posttime">
+                        <p>Published on <time datetime="2023-10-06"><strong>October 6, 2023</strong></time></p>
+                    </div>
+                </header>
+                <p>
+                    In the first session we covered the outcomes of the course and where we aim to finish at by the end
+                    of the year. I was introduced to the lecturers and contacted the Service Desk to get access to the
+                    brighton domains website, which will allow me to build and host my website over the course of the
+                    next few weeks.
+                </p>
+
+                <p>
+                    To start things off, I decided to do some research into a possible roadmap for web developers to get a better understanding of what's to come. 
+                    I found doing this rather beneficial, as it was able to prepare me for the topics of upcoming lectures and give me some insight into the industry itself. This material used is listed in the reading list.
+                </p>
+            </article>
+
+        </main><!--END OF MAIN CONTENT PAGE-->
+
+        <aside class="aside aside1">
+            <h2>Weekly Posts:</h2>
+            <ul>
+                <li>
+                    <p><a href=" #week0">Induction Week</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week1">Week 1: HTML Basics</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week2">Week 2: Content Markup</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week3">Week 3: Advanced Markup</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week4">Week 4: CSS Basics</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week5">Week 5: Styling Main Content</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week6">Week 6: Responsive Web Design</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week7">Week 7: Flexible Media</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week8">Week 8: CSS3 Responsive Layouts</a></p>
+                </li>
+                <li>
+                    <p><a href=" #week9">Week 9: HTML5 Forms</a></p>
+                </li>
+            </ul>
+            <br>
+        </aside>
+
+        <aside class="aside aside2">
+            <h2>References:</h2>
+            <ol>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics"> MDN Contributers
+                            (July 19, 2023). HTML table basics - Learn web development | MDN.</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://web.mit.edu/jmorzins/www/fonts.html">Jacob Morzinski (n.d). Safe web fonts
+                            - Massachusetts Institute of Technology.</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">MDN
+                            Contributers
+                            (December 12, 2023). Beginner's guide to media queries.</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://www.w3schools.com/tags/att_input_type_file.asp">W3Schools (n.d) HTML Input Type File</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://webdesign.tutsplus.com/the-best-css-checkbox-hack-tutorials-on-tuts--cms-92969a">George Martsoukos (November 3, 2022) What is the “CSS Checkbox Hack”?</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property">MDN Contributers (January 17, 2024) At-rules: @property</a>
+                    </cite>
+                </li>
+            </ol>
+            <br>
+            <h2>Reading List:</h2>
+            <ul>
+                <li>
+                    <cite>
+                        <a href="https://www.youtube.com/watch?v=b6_u8IVVLdo">How to create a read more button with ONLY CSS - ByteGrad</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://www.browserstack.com/guide/web-development-roadmap">Web Development Roadmap: How to become a Web Developer?</a>
+                    </cite>
+                </li>
+            </ul>
+        </aside>
+
+        <footer class="footer">
+            <div>
+                <form style="display: inline" action=" #top" method="get">
+                    <button class="btn">Go to top</button>
+                </form>
+            </div>
+            <!--<p><a href=" #top">Go to top</a></p>-->
+            <a href="mailto:jh1033@brighton.ac.uk">Email Jennie Harding</a>
+            <small>&copy; 2023, Year 1 Web Dev.</small>
+        </footer>
+    </div>
+</body>
